@@ -1,0 +1,16 @@
+.content{
+    display: grid;
+    margin: 0 auto;
+    margin-top: 120px;
+    width: clamp(100px, 50%, 1200px);
+}
+
+.img{
+    width: 256px;
+    height: auto;
+    float: left;
+    padding: 8px;
+}
+.desc{
+    text-align: justify;
+}
