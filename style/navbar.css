@@ -5,8 +5,8 @@
     padding: 0;
 }
 :root{
-    --primary: #6700f8;
-    --primary-hover: rgba(139, 56, 255, 0.274);
+    --primary: #3C787E;
+    --primary-hover: #3c787eb6;
     --light: #EEEEEE;
     --dark: #212121;
     --price-available: #32CD32;
