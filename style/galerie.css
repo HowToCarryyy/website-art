@@ -6,7 +6,7 @@
     display: grid;
     margin: 0 auto;
     margin-top: 120px;
-    width: clamp(100px, 50%, 1200px);
+    width: clamp(20%, 1000px, 90%);
 }
 .reference {
     padding: 15px;
@@ -15,6 +15,12 @@
     border: 3px solid var(--dark);
     justify-content: center;
     margin-bottom: 60px;
+}
+.arrow{
+    display: none;
+}
+.desc-aside{
+    display: none;
 }
 .img{
     width: 100%;
@@ -26,14 +32,34 @@
 }
 
 @media (max-width: 766px) {
+    .arrow{
+        display: block;
+        grid-row: 1;
+        height: 3vw;
+        width: 3vw;
+        border-style: solid;
+        border-color: var(--dark);
+        border-width: 0px 1px 1px 0px;
+        transform: rotate(45deg);
+        transition: .3s ease-in-out;
+        margin-top: 0px;
+    }
+    .arrow.b:after{
+        content: '';
+        display: none;
+    }
+    .arrow.is-active{
+        transform: rotate(-135deg);
+        margin-top: 2vw;
+    }
     .reference:before{
         text-align: center;
         grid-column: 1 / 4;
+        grid-row: 1;
         font-weight: bold;
     }
     .reference:after{
         color: var(--price-available);
-        content: 'xx€';
         text-align: left;
         grid-column: 1 / 4;
         font-size: 40px;
@@ -44,10 +70,22 @@
     .reference.a:after{
         content: 'xx€';
     }
-    .desc{
-        display: none;
+    .reference.b:before{
+        content: 'Lorem Ipsum';
+    }
+    .reference.b :after{
+        color: var(--price-available);
+        font-size: 40px;
+        content: 'xx€';
+    }
+    .desc-aside.is-active{
+        grid-column: 1/5;
+        display: block;
     }
     .img{
-        grid-column: 1 / 4;
+        grid-column: 1 / 5;
+    }
+    .desc{
+        display: none;
     }
 }

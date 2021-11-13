@@ -6,7 +6,7 @@
 }
 :root{
     --primary: #6700f8;
-    --primary-hover: #8c38ff;
+    --primary-hover: rgba(139, 56, 255, 0.274);
     --light: #EEEEEE;
     --dark: #212121;
     --price-available: #32CD32;
@@ -63,10 +63,6 @@ nav {
     z-index: 1;
     transform-origin: 0 0;
     transition: 0.4s;
-}
-.hamburger:hover span:nth-child(2){
-    transform: translateX(10px);
-    background-color: var(--primary);
 }
 .hamburger.is-active span:nth-child(1){
     transform: translate(0px, -2px) rotate(45deg);
