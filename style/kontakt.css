@@ -52,7 +52,8 @@ ul li i:hover {
   color: var(--primary-hover);
   background: var(--dark-hover);
   transform: rotate(360deg);
-  transition: all 1s;
+  transition: all .4s;
+  border-radius: 20px;
 }
 
 .fa-twitter::before{
