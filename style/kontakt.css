@@ -14,7 +14,7 @@
 }
 
 /* social media links */
-ul{
+.social-wrapper{
     display: flex;
     width: min-content;
     border-radius: 100%;
