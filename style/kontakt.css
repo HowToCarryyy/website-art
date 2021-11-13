@@ -1,0 +1,60 @@
+.content {
+    display: grid;
+    margin: 0 auto;
+    margin-top: 120px;
+    width: clamp(20%, 500px, 90%);
+    row-gap: 20px;
+}
+
+.wrapper{
+    display: flex;
+}
+.header{
+    padding-right: 5px;
+}
+
+/* social media links */
+ul{
+    display: flex;
+    width: min-content;
+    border-radius: 100%;
+}
+.fa{
+    display: flex !important;
+    text-decoration: none !important;
+    color: var(--primary);
+    font-size: 2.5rem;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    margin-right: 5px;
+}
+.social-media-links{
+    text-decoration: none;
+    width: min-content;
+    border-radius: 100%;
+}
+li{
+    list-style: none;
+}
+
+ul li i {
+    border-radius: 100%;
+    background-color: var(--dark);
+    padding: 8px;
+    margin-bottom: 5px;
+    width: 5rem;
+    height: 5rem;
+}
+
+
+ul li i:hover {
+  color: var(--primary-hover);
+  background: var(--dark-hover);
+  transform: rotate(360deg);
+  transition: all 1s;
+}
+
+.fa-twitter::before{
+    text-decoration: none !important;
+}
