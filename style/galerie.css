@@ -23,6 +23,10 @@
     justify-content: center;
     margin-bottom: 60px;
 }
+.reference:hover{
+    border: 3px solid var(--primary);
+    cursor: pointer;
+}
 .arrow{
     display: none;
 }
