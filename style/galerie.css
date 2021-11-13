@@ -1,7 +1,14 @@
-.price{
+.price.available{
     font-size: 40px;
     color: var(--price-available);
 }
+
+.price.sold{
+    margin-top: 10px;
+    font-size: 2rem;
+    color: var(--price-sold);
+}
+
 .content {
     display: grid;
     margin: 0 auto;
@@ -44,40 +51,39 @@
         transition: .3s ease-in-out;
         margin-top: 0px;
     }
-    .arrow.b:after{
-        content: '';
-        display: none;
-    }
     .arrow.is-active{
         transform: rotate(-135deg);
         margin-top: 2vw;
     }
-    .reference:before{
+    .reference::before{
         text-align: center;
         grid-column: 1 / 4;
         grid-row: 1;
         font-weight: bold;
     }
-    .reference:after{
-        color: var(--price-available);
+    .reference::after{
         text-align: left;
         grid-column: 1 / 4;
         font-size: 40px;
     }
-    .reference.a:before{
+    .reference.available::before{
         content: 'Lorem Ipsum';
     }
-    .reference.a:after{
+    .reference.available::after{
         content: 'xx€';
-    }
-    .reference.b:before{
-        content: 'Lorem Ipsum';
-    }
-    .reference.b :after{
         color: var(--price-available);
-        font-size: 40px;
-        content: 'xx€';
+        font-size: 2rem;
     }
+
+    .reference.sold::before{
+        content: 'Lorem Ipsum';
+    }
+    .reference.sold::after{
+        content: 'verkauft';
+        color: var(--price-sold);
+        font-size: 1rem;
+    }
+
     .desc-aside.is-active{
         grid-column: 1/5;
         display: block;
