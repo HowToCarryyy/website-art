@@ -33,7 +33,7 @@ nav {
 }
 .logo{
     color: #FFF;    
-    font-size: 28px;
+    font-size: clamp(4px, 28px, 5vw);
     font-weight: 900;
     letter-spacing: 2px;
     text-transform: uppercase;
