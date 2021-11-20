@@ -72,7 +72,7 @@
   content: "Größe: ";
 }
 .price::before {
-  color: #000000;
+  color: var(--dark);
   content: "Preis: ";
 }
 .date::before {
