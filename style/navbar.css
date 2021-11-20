@@ -122,6 +122,23 @@ nav {
     color: var(--light) !important;
 }
 
+/*scrollbar*/
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--dark);
+}
+ 
+::-webkit-scrollbar-thumb {
+    background: var(--primary);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-hover); 
+}
+
 @media (min-width: 768px) {
     .hamburger{
         display: none;
