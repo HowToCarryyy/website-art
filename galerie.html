@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style/navbar.css">
     <link rel="stylesheet" href="/style/galerie.css">
+    <link rel="stylesheet" href="/style/lightbox.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <title>Galerie</title>
     <script src="/js/js_index.js" defer></script>
     <script src="/js/js_galerie.js" defer></script>
+    <script src="/js/lightbox-plus-jquery.min.js" defer></script>
 </head>
 <body>
     <nav class="navbar">
@@ -47,7 +49,7 @@
                 <div class="picture-name">Name des Bildes/Nummerierung</div>
                 <div class="img-wrapper">
                     <div class="img-wrapper-child sold">
-                        <img class="img sold" src="/Bilder/test1.png">
+                        <a class="image-to-lb" href="/Bilder/test1.png" data-lightbox="mygalery" data-title="Bild 1"><img class="img sold" src="/Bilder/test1.png"></a>
                     </div>
                 </div>
                 <div class="data">
@@ -63,7 +65,7 @@
                 <div class="picture-name">Name des Bildes/Nummerierung</div>
                 <div class="img-wrapper">
                     <div class="img-wrapper-child">
-                        <img class="img sold" src="/Bilder/test2.png">
+                        <a class="image-to-lb" href="/Bilder/test2.png" data-lightbox="mygalery" data-title="Bild 2"><img class="img sold" src="/Bilder/test2.png"></a>
                     </div>
                 </div>
                 <div class="data">

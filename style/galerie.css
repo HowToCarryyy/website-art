@@ -51,6 +51,9 @@
   width: 100%;
   height: auto;
 }
+.image-to-lb {
+  cursor: zoom-in;
+}
 .img.sold::after {
   display: block;
   content: "test";
