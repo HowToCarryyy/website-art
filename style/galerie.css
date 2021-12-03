@@ -55,6 +55,7 @@
   cursor: zoom-in;
   text-decoration: none;
   color: var(--dark);
+  font-size: clamp(1em, 1em, 50em);
 }
 .img.sold::after {
   display: block;
