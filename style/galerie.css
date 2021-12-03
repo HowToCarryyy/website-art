@@ -10,7 +10,7 @@
   display: grid;
   margin: 0 auto;
   margin-top: 120px;
-  width: clamp(20%, 1000px, 90%);
+  width: clamp(20%, 1920px, 90%) !important;
 }
 .heading {
   text-align: center;
@@ -53,6 +53,8 @@
 }
 .image-to-lb {
   cursor: zoom-in;
+  text-decoration: none;
+  color: var(--dark);
 }
 .img.sold::after {
   display: block;
@@ -81,6 +83,22 @@
 .date::before {
   content: "Datum: ";
 }
+
+.gallery{
+  display: flex;
+  padding: 2px;
+}
+.gallery-column{
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  padding: 2px 2px;
+}
+.image-nfsp{
+  display: block;
+	width: 100%;
+}
+
 
 @media (max-width: 766px) {
   .data {
