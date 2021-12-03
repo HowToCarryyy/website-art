@@ -12,13 +12,15 @@
   margin-top: 120px;
   width: clamp(20%, 1920px, 90%) !important;
 }
-/*.heading {
+
+.heading {
   text-align: center;
   margin-bottom: 40px;
   font-weight: bolder;
   font-size: clamp(4px, 28px, 4.5vw);
 }
-.reference {
+
+/*.reference {
   padding: 15px;
   display: block;
   border: 3px solid var(--dark);
@@ -109,7 +111,7 @@
 
 .image-to-lb:hover > p{
   transition: .1s;
-  opacity: 0;
+  opacity: .5;
 }
 
 @media (max-width: 766px) {
