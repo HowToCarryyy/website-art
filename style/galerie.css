@@ -10,7 +10,7 @@
   display: grid;
   margin: 0 auto;
   margin-top: 120px;
-  width: clamp(20%, 1920px, 90%) !important;
+  width: clamp(20%, 1150px, 90%) !important;
 }
 
 .heading {
