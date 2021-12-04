@@ -88,30 +88,40 @@
 .gallery-column{
   display: flex;
   flex-direction: column;
-  width: 25%;
-  padding: 2px 2px;
+  width: 33%;
+  padding: 15px;
 }
 .image-nfsp{
+
   display: block;
 	width: 100%;
   transition: .3s;
 }
 
-.image-nfsp:hover {
-  transform: scale(1.02);
-}
 
 .image-to-lb {
+  position: relative;
   cursor: zoom-in;
-  text-decoration: none;
-  color: var(--dark);
-  font-size: clamp(1em, 1em, 50em);
-  transition: .3s;
+  padding-bottom: 10px;
 }
 
-.image-to-lb:hover > p{
-  transition: .1s;
-  opacity: .5;
+.img-desc {
+  position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 25px 15px 15px;
+  margin-bottom: 10px;
+	width: 100%;
+	font-size: 16px;
+  text-decoration: none;
+	color: var(--light);
+	opacity: 0;
+	background: linear-gradient(0deg, rgba(0, 0, 0, .5) 0%, rgba(255, 255 ,255 , 0) 100%);
+	transition: .3s;
+}
+
+.image-to-lb:hover .img-desc{
+  opacity: 1;
 }
 
 @media (max-width: 766px) {
