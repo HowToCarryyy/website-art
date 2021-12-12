@@ -38,6 +38,10 @@ nav {
     letter-spacing: 2px;
     text-transform: uppercase;
 }
+.logo > a{
+    color: var(--light);
+    text-decoration: none;
+}
 .hamburger{
     display: block;
     position: relative;
