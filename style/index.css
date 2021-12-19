@@ -7,15 +7,11 @@
 }
 
 .img{
-    display: flex;
     width: 256px;
     height: auto;
+    float: left;
     padding: 8px;
-    margin: 0 auto
 }
 .desc{
     text-align: justify;
-    padding: 8px;
-    border: 2px solid var(--dark);
-    border-radius: 8px;
 }
