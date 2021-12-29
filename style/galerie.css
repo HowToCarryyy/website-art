@@ -7,18 +7,19 @@
 }*/
 
 .content {
-  display: grid;
-  margin: 0 auto;
-  margin-top: 120px;
-  width: clamp(20%, 1150px, 90%) !important;
+    display: grid;
+    margin: 0 auto;
+    margin-top: 120px;
+    width: clamp(20%, 1150px, 90%) !important;
 }
 
 .heading {
-  text-align: center;
-  margin-bottom: 40px;
-  font-weight: bolder;
-  font-size: clamp(4px, 28px, 4.5vw);
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: bolder;
+    font-size: clamp(4px, 28px, 4.5vw);
 }
+
 
 /*.reference {
   padding: 15px;
@@ -81,50 +82,58 @@
   content: "Datum: ";
 }*/
 
-.gallery{
-  display: flex;
-  padding: 2px;
-}
-.gallery-column{
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  width: 33%;
-  padding: 15px 15px 0px 0px;
-}
-.image-nfsp{
-  display: block;
-	width: 100%;
-  transition: .3s;
+.gallery {
+    display: grid;
+    padding: 2px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
 }
 
+
+/*.gallery-column {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 33%;
+    padding: 15px 15px 0px 0px;
+}
+
+*/
+
+.image-nfsp {
+    display: block;
+    width: 100%;
+    transition: .3s;
+}
 
 .image-to-lb {
-  position: relative;
-  cursor: zoom-in;
-  margin-bottom: 10px;
+    display: grid;
+    margin: auto;
+    position: relative;
+    cursor: zoom-in;
+    margin-bottom: 10px;
 }
 
 .img-desc {
-  position: absolute;
-	bottom: 0;
-	left: 0;
-	padding: 10px 15px 15px;
-	width: 100%;
-	font-size: 16px;
-  text-decoration: none;
-	color: var(--light);
-	opacity: 0;
-	background: linear-gradient(0deg, rgba(0, 0, 0, .5) 0%, rgba(255, 255 ,255 , 0) 100%);
-	transition: .3s;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 10px 15px 15px;
+    width: 100%;
+    font-size: 16px;
+    text-decoration: none;
+    color: var(--light);
+    opacity: 0;
+    background: linear-gradient(0deg, rgba(0, 0, 0, .5) 0%, rgba(255, 255, 255, 0) 100%);
+    transition: .3s;
 }
 
-.image-to-lb:hover .img-desc{
-  opacity: 1;
+.image-to-lb:hover .img-desc {
+    opacity: 1;
 }
 
 @media (max-width: 766px) {
-  .data {
-    display: block;
-  }
+    .data {
+        display: block;
+    }
 }
