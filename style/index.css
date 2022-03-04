@@ -3,7 +3,7 @@
     margin: 0 auto;
     margin-top: 120px;
     width: clamp(100px, 50%, 1200px);
-    margin-bottom: 185px !important;
+    margin-bottom: 47vh;
 }
 
 .img {

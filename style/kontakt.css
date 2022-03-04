@@ -2,17 +2,19 @@
     display: grid;
     margin: 0 auto;
     margin-top: 120px;
+    margin-bottom: 26vh;
     width: clamp(20%, 500px, 90%);
     row-gap: 20px;
 }
 
-.heading{
+.heading {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: clamp(4px, 28px, 4.5vw);
 }
-.card{
+
+.card {
     background-color: var(--dark);
     min-width: 130px;
     height: 140px;
@@ -25,37 +27,37 @@
     border-radius: 20px;
 }
 
-.card i{
+.card i {
     color: var(--primary);
     font-size: 2rem;
     position: absolute;
     transition: all .4s ease;
 }
 
-.card-title{
+.card-title {
     color: var(--primary);
     font-size: 1.2rem;
     text-transform: uppercase;
-    transform: translate(0,-80px);
+    transform: translate(0, -80px);
     transition: all .4s ease;
 }
 
-.card-info{
+.card-info {
     color: var(--light);
     margin-top: 10px;
     transform: translate(0, 80px);
     transition: all .4s ease;
 }
 
-.card:hover i{
+.card:hover i {
     transform: scale(2);
     opacity: 0;
 }
 
-.card:hover .card-title{
+.card:hover .card-title {
     transform: translate(0, 0);
 }
 
-.card:hover .card-info{
+.card:hover .card-info {
     transform: translate(0, 0);
 }
