@@ -1,17 +1,18 @@
-.content{
+.content {
     display: grid;
     margin: 0 auto;
     margin-top: 120px;
     width: clamp(100px, 50%, 1200px);
-    margin-bottom: 30px !important;
+    margin-bottom: 185px !important;
 }
 
-.img{
+.img {
     width: 256px;
     height: auto;
     float: left;
     padding: 8px;
 }
-.desc{
+
+.desc {
     text-align: justify;
 }

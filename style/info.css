@@ -1,0 +1,7 @@
+.content {
+    display: grid;
+    margin: 0 auto;
+    margin-top: 120px;
+    width: clamp(20%, 500px, 90%);
+    row-gap: 20px;
+}

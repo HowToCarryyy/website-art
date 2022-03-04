@@ -1,0 +1,19 @@
+.footer {
+    display: flex;
+    justify-content: right;
+    background-color: var(--dark);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.p--footer {
+    color: var(--light);
+    padding: 0px 3px;
+    font-size: clamp(12px, 12px, 1vw);
+}
+
+.a--p--footer {
+    color: var(--light);
+    text-decoration: none;
+    font-size: clamp(12px, 12px, 1vw);
+}
